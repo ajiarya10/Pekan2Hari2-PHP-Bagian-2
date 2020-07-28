@@ -63,6 +63,17 @@
         // Lakukan Looping di sini
         echo "<br>";
         echo "Array sisa baginya adalah:  "; 
+        $rest = [];
+        foreach ($numbers as $numb){
+            $rest[] = $numb % 5;
+        }
+        print_r($rest);
+        // $hasil1 = $numbers[0] % 5;
+        // $hasil2 = $numbers[1] % 5;
+        // $hasil3 = $numbers[2] % 5;
+        // $hasil4 = $numbers[3] % 5;
+        // $hasil5 = $numbers[4] % 5;
+        // $hasil6 = $numbers[5] % 5; 
         echo "<br>";
 
         echo "<h3> Soal No 3 Looping Asociative Array </h3>";
@@ -84,10 +95,37 @@
             ['003', 'Mouse Genius', 50000, 'Mouse Genius biar lebih pinter', 'genius.jpeg'],
             ['004', 'Mouse Jerry', 30000, 'Mouse yang disukai kucing', 'jerry.jpeg']
         ];
-        print_r($items);
+        $arr = array("id" => 001, 
+        "name" => "Keyboard Logitek", 
+        "price" => 60000, 
+        "description" => "Keyboard yang mantap untuk kantoran", 
+        "source" => "logitek.jpeg");
+        $arr1 = array("id" => 002, 
+        "name" => "Keyboard MSI", 
+        "price" => 300000, 
+        "description" => "Keyboard gaming MSI mekanik", 
+        "source" => "msi.jpeg");
+        $arr2 = array("id" => 003, 
+        "name" => "Mouse Genius", 
+        "price" => 50000, 
+        "description" => "Mouse Genius biar lebih pinter", 
+        "source" => "genius.jpeg");
+        $arr3 = array("id" => 004, 
+        "name" => "Mouse Genius", 
+        "price" => 30000, 
+        "description" => "Mouse Genius biar lebih pinter", 
+        "source" => "jerry.jpeg");
         echo "<br>";
         
         // Output: 
+        print_r($arr);
+        echo "<br>";
+        print_r($arr1);
+        echo "<br>";
+        print_r($arr2);
+        echo "<br>";
+        print_r($arr3);
+        echo "<br>";
         echo "<h3>Soal No 4 Asterix </h3>";
         /* 
             Soal No 4
